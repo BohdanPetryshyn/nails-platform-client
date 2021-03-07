@@ -1,6 +1,9 @@
 {
-  "name": "platform-client",
-  "version": "0.1.0",
+  "name": "@bpetryshyn/nails-platform-client",
+  "version": "0.1.2",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -20,6 +23,11 @@
     "@aws-cdk/core": "1.92.0"
   },
   "dependencies": {
-    "@aws-cdk/core": "1.92.0"
+    "@aws-cdk/aws-ec2": "^1.92.0",
+    "@aws-cdk/aws-ecs": "^1.92.0",
+    "@aws-cdk/aws-elasticloadbalancingv2": "^1.92.0",
+    "@aws-cdk/aws-ssm": "^1.92.0",
+    "@aws-cdk/core": "^1.92.0",
+    "source-map-support": "^0.5.16"
   }
 }
