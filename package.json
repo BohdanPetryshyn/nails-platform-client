@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "format": "prettier --write \"lib/**/*.ts\"",
     "lint": "eslint \"{lib,test}/**/*.ts\" --fix"
   },
