@@ -7,3 +7,5 @@ cdk.out
 
 # IDEA
 .idea
+
+node_modules
