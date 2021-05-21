@@ -8,11 +8,11 @@ export class S3Buckets extends Construct {
     constructor(scope: Construct, id: string) {
         super(scope, id);
 
-        const userPhotosBucketArn = StringParameter.valueFromLookup(
+        const userPhotosBucketName = StringParameter.valueFromLookup(
             this,
-            'nails-user-photos-bucket-arn',
+            'nails-user-photos-bucket-name',
         );
 
-        this.userPhotos = Bucket.fromBucketArn(this, 'user-photos-s3-bucket', userPhotosBucketArn);
+        this.userPhotos = Bucket.fromBucketName(this, 'user-photos-s3-bucket', userPhotosBucketName);
     }
 }
